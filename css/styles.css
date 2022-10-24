@@ -1,0 +1,15 @@
+:root{
+    --var-color-red:#ef2b41;
+    --var-color-black: #11130e;
+    --var-casi-black:#070325;
+    --var-color-green:#b6d3a5;
+}
+body{
+    width: 100%;
+    height: 100vh;
+    max-height: 100%;
+}
+.white{
+    color:white;
+}
+

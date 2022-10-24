@@ -1,0 +1,120 @@
+*{
+    box-sizing: border-box;
+    padding: 0;
+    margin: 0;
+}
+:root{
+    --var-color-red:#ef2b41;
+    --var-color-black: #11130e;
+    --var-casi-black:#070325;
+    --var-color-green:#b6d3a5;
+}
+
+/* montserrat font */
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Roboto+Condensed:ital,wght@0,300;0,400;0,700;1,300;1,400;1,700&display=swap');
+body{
+    width: 100%;
+    height: 100vh;
+    max-height: 100%;
+    font-family: 'Roboto Condensed', sans-serif;
+
+}
+
+.grid-container{
+    width: 100%;
+    height: 100%;
+
+    display: grid;
+    grid-template:
+    "header"100px
+    "main" auto;
+}
+.grid-container > .header{
+    background-color: var(--var-casi-black);
+    width:100%;
+    height: 100px;
+
+    display: grid;
+    grid-template: 
+    "logo nav-list";
+}
+.header > .logo_IMG{
+    max-width: 110px;
+    align-self: center;
+    grid-area: logo;
+    filter: contrast(105%);
+}
+
+.header > .nav-list{
+    grid-area: nav-list;
+    list-style: none;
+    justify-self: flex-end;
+    padding:0px 40px 5px 0px;
+    align-self: center;
+    display: flex;
+    justify-content: space-around;
+    width: 80%;
+    max-width: 400px;
+    letter-spacing: 2px;
+    gap: 29px;
+}
+.nav-list > a{
+    text-decoration: none;
+    color: var(--var-color-red);
+}
+
+.nav-list > .inicio-text{
+    color: white;
+}
+
+.nav-list > .productos-text .pagos-text .info-text{
+    color: var(--var-color-red);
+}
+
+.main-class{
+    grid-area: main;
+    width: 100%;
+    max-width: 1200px;
+    max-height: 400px;
+    display: flex;
+    justify-content: center;
+    justify-self: center;
+}
+.main-class > .bannerImage{
+    width: 100%;
+    object-position: center;
+    overflow: hidden;
+    
+}
+.iconBurguer{
+    visibility: hidden;
+}
+
+@media(max-width:900px)
+{
+    .nav-list{
+        visibility: hidden;
+    }
+    .iconBurguer{
+        visibility: visible;
+        grid-column-start: 2;
+        grid-column-end: 3;
+        grid-row-start: 1;
+        grid-row-end: 2;
+        max-width: 45px;
+        justify-self: flex-end;
+        align-self: center;
+        padding: 0px 12px 0px 0px;
+        cursor: pointer;
+        
+    }
+}
+
+@media(max-width:450px){
+    .main-class{
+        width: auto;
+        height: 200px;
+    }
+    
+}
