@@ -4,12 +4,14 @@
     --var-casi-black:#070325;
     --var-color-green:#b6d3a5;
 }
-body{
+html{
+    width: 100%;
+}
+/* body{
     width: 100%;
     height: 100vh;
     max-height: 100%;
-}
+} */
 .white{
     color:white;
 }
-

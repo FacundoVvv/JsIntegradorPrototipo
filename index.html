@@ -5,6 +5,8 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="/css/index.css">
+    <script defer src="/scripts/indexObjects.js"""></script>
+    <script defer src="/scripts/index.js"></script>
     <title>Document</title>
 </head>
 <body>
@@ -13,18 +15,106 @@
         <header class="header">
             <img class="logo_IMG" src="/assets/headerImages/logo.png" alt="">
             <ul class="nav-list">
+                <img class="img-cart" id="cart-img-button" src="/assets/headerImages/add-to-cart.png" alt="">
                 <a href="" class="inicio-text">Inicio</a>
-                <a href="" class="productos-text">Productos</a>
-                <a href="" class="pagos-text">Pagos</a>
-                <a href="" class="info-text">Info</a>
+                <a href="#section-recomended" class="recomendaciones-text">Recomendados</a>
+                <a href="#searchProduct" class="productos-text">Productos</a>
+                <a href="login.html" class="login">Login</a>
             </ul>
+            <div class="car-box-shopping" id="cart-shopping">
+                <span class="title-car">Añadidos al carrito</span>
+                <div class="items-car-container" id="itemsCartContainer">
+                    <!-- elements -->
+                    <!-- <div class="items-car">
+                        <img class="items-img" src="/assets/shoesImages/adidasGazelleShoes.svg" alt="">
+                        <span class="items-title" id="title-cart">ADIDAS SHOW THE WAY</span>
+                        <div class="price-and-add-button-container">
+                            <span class="items-price">$ 22.500</span>
+                            <img id="leftLessArrow" class="lessImg" src="/assets/mainImages/left_arrow.png" alt="">
+                            <span id="numberCart" class="numberCart">1</span>
+                            <img id="rightMoreArrow" class="moreImg" src="/assets/mainImages/right_arrow.png" alt="">
+                        </div>
+                    </div>-->
+                    
+                </div>
+                <span class="total-text-car">Total: </span>
+                <span class="price-text-car" id="total-price-cart">$ 0</span>
+                <div class="pay-method" id="payMethod">
+                    <span class="visaText">VISA</span>
+                    <img class="card-img visa-img" src="/assets/headerImages/car-container-images/visa-imagen.png" alt="">
+                    <span class="mastText">MASTERCARD</span>
+                    <img class="card-img mastercard-img" src="/assets/headerImages/car-container-images/master-card.png" alt="">
+                    <span class="amexText">AMEX</span>
+                    <img class="card-img amex-img" src="/assets/headerImages/car-container-images/amex-imagen.png" alt="">
+                </div>
+                <button class="button-buy-car" id="buttonBuy">COMPRAR</button>
+            </div>
             <img class="iconBurguer" src="/assets/headerImages/menu-burger.png" alt="">
+            
         </header>
 
         <main class="main-class">
-            <img class="bannerImage" src="/assets/mainImages/deporteBanner.svg" alt="">
+            <div class="banner-container" id="bannerContainer">
+                <!-- <img class="bannerImage" src="/assets/mainImages/deporteBanner.svg" alt=""> -->
+                <!-- <img class="bannerImage" src="/assets/mainImages/secondBanner.svg" alt=""> -->
+                <img id="leftArrow" class="arrow_img arrow_left" src="/assets/mainImages/left_arrow.png" alt="">
+                <img id="actualBannerImage" class="bannerImage" src="/assets/mainImages/banners/newStyle.svg" alt="">
+                <img id="rightArrow" class="arrow_img arrow_right" src="/assets/mainImages/right_arrow.png" alt="">
+            </div>            
+            <div class="container-suspensive-points" id="suspensivePointsContainer">
+                <!-- <img src="/assets/mainImages/redPoint.svg" alt="punto rojo imagen">
+                <img src="/assets/mainImages/whitePoint.svg" alt="punto blanco imagen">
+                <img src="/assets/mainImages/whitePoint.svg" alt="punto blanco imagen"> -->
+            </div>
         </main>
+        <h2 id="section-recomended" class="text-w">NUESTRAS <span class="span-r">RECOMENDACIONES</span></h2>
+        <h3 class="text-r">PARA VOS</h3>
+        <section class="section">
+            <!-- <img id="leftArrowSection" class="arrow_img L_arrow" src="/assets/mainImages/left_arrow.png" alt=""> -->
+            <div class="selectedImagesSection" id="selectedImagesSection">
+                <!-- <img class="selectedShoesImg" src="/assets/shoesImages/adidasGazelleShoes.svg" alt="">
+                <img class="selectedShoesImg" src="/assets/shoesImages/AirwalkNtxLyte.svg" alt="">
+                <img class="selectedShoesImg" src="/assets/shoesImages/adidasGazelleShoes.svg" alt="">
+                <img class="selectedShoesImg" src="/assets/shoesImages/AirwalkNtxLyte.svg" alt="">
+                <img class="selectedShoesImg" src="/assets/shoesImages/adidasGazelleShoes.svg" alt=""> -->
 
+            </div>
+            <!-- <img id="rightArrowSection" class="arrow_img R_arrow"" src="/assets/mainImages/right_arrow.png" alt=""> -->
+        </section>
+        
+        <section class="section_search_product" id="searchProduct">
+            <h2 class="text-r search-text" >BUSCAR <span class="text-w products-text" >PRODUCTOS</span></h2>
+            <div class="filter-container" id="filter-container">
+                <h2 class="category-text" id="category-text">Categorías</h2>
+                <img class="arrow_category" id="category-arrow" src="/assets/mainImages/left_arrow.png" alt="">
+                <div class="box-options-category" id="categoryOptionsContainer">
+                    <!-- <span class="category-text-options">Deportivas</span>
+                    <span class="category-text-options">Deportivas</span>
+                    <span class="category-text-options">Deportivas</span> -->
+                </div>
+            </div>
+            <div class="search-container">
+                <input class="search-input" type="text" id="input-search-products" placeholder="Buscar zapatillas...">
+                <button id="searchProductButton""" class="search-button">Buscar</button>
+            </div>
+            <div class="all-shoes-container" id="shoesContainer">
+                <!-- <div class="card-container"> -->
+                    <!-- <button class="add-cart-button">
+                        <img class="cart-img" src="/assets/sectionCards/shopping-cart.png" alt="">
+                        Agregar
+                    </button>
+                    <img class="card-img-shoes" src="/assets/shoesImages/adidasGazelleShoes.svg" alt="">
+                    <span class="category">DEPORTIVAS</span>
+                    <h3 class="shoesTitle">ADIDAS GAZELLE</h3>
+                    <span class="informacion-text">Lorem ipsum dolor sit amet.Lorem ipsum dolor sit amet.Lorem ipsum dolor sit amet.</span>
+                    <span class="precio">$20.000</span>
+                </div>
+                -->
+                
+            </div>
+            <button class="showMoreButton" id="showMoreButton">Mostrar más</button>
+            <button class="showMoreButton" id="showLessButton">Mostrar menos</button>
+        </section>
     </div>
     
 </body>

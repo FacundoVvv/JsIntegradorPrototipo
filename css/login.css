@@ -1,0 +1,121 @@
+*{
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+:root{
+    --var-color-red:#ef2b41;
+    --var-color-black: #11130e;
+    --var-casi-black:#070325;
+    --var-color-green:#b6d3a5;
+}
+
+/* montserrat font */
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap');
+/* roboto */
+@import url('https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&display=swap');
+
+
+body{
+    width: 100%;
+    height: 100vh;
+    overflow: hidden;
+}
+.grid-container{
+    width: 100%;
+    height: 100%;
+    background-color: #070325;
+    margin: 0 auto;
+    max-width: 1400px;
+
+    display: grid;
+
+    /* justify-content: center; */
+    align-items: center;
+
+    grid-template: "title"20%
+                    "labelUser" 10%
+                    "inputUser" 10%
+                    "labelPass" 10%
+                    "inputPass" 10%
+                    "redirectRegister" 20%
+                    "button" 20%
+    ;
+}
+.title-text{
+    display: flex;
+    gap: 0.5%;
+    grid-area: title;
+    background-color:#070325a9;
+    height: 100%;
+    width: 100%;
+    
+    font-family: 'Roboto', sans-serif;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+}
+.loginText{
+    color: white;
+    font-weight: 900;
+    font-size: clamp(12px, 3vw, 48px);
+}
+.foulText{
+    color: #ef2b41;
+    font-weight: 900;
+    font-size: clamp(12px, 3vw, 48px);
+}
+.userLabel{
+    grid-area: labelUser;
+    justify-self: center;
+    text-align: end;
+    color: white;
+    font-family: 'Roboto', sans-serif;
+    font-weight: 600;
+    font-size: clamp(12px, 3vw, 17px);
+}
+.userInput{
+    grid-area: inputUser;
+    font-family: 'Roboto', sans-serif;
+    width: 250px;
+    justify-self: center;
+    outline: none;
+    border: none;
+    height: 50%;
+    padding: 5px;
+    border-radius: 22px;
+}
+.labelPass{
+    grid-area: labelPass;
+    justify-self: center;
+    text-align: end;
+    color: white;
+    font-family: 'Roboto', sans-serif;
+    font-weight: 600;
+    font-size: clamp(12px, 3vw, 17px);
+}
+.inputPass{
+    grid-area: inputPass;
+    font-family: 'Roboto', sans-serif;
+    width: 250px;
+    justify-self: center;
+    outline: none;
+    border: none;
+    height: 50%;
+    padding: 5px;
+    border-radius: 22px;
+}
+.registerRedirectMsg{
+    grid-area: redirectRegister;
+    font-family: 'Roboto', sans-serif;
+    justify-self: center;
+    
+}
+.registerRedirectMsg > span{
+    color: white;
+    font-family: 'Roboto', sans-serif;
+}
+.button{
+    grid-area: button;
+    font-family: 'Roboto', sans-serif;
+}
