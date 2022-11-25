@@ -65,9 +65,7 @@ const shoes = [
         stock: 25,
         color: "Negro",
         oferta: false,
-        infoText: `Lorem ipsum dolor sit amet 
-        consectetur adipisicing elit. 
-        Molestiae maxime voluptatem quam, `,
+        infoText: `Las zapatillas más comodas. `,
         id:1,
 
     },
@@ -81,9 +79,7 @@ const shoes = [
         stock: 15,
         color: "Negro",
         oferta: false,
-        infoText: `Lorem ipsum dolor sit amet 
-        consectetur adipisicing elit. 
-        Molestiae maxime voluptatem quam, `,
+        infoText: `El estilo va con vos. `,
         id:2,
     },
     {
@@ -96,9 +92,7 @@ const shoes = [
         stock: 15,
         color: "Negro",
         oferta: false,
-        infoText: `Lorem ipsum dolor sit amet 
-        consectetur adipisicing elit. 
-        Molestiae maxime voluptatem quam, `,
+        infoText: `¿Qué esperas para usarlas? `,
         id:3,
     },
     {
@@ -111,9 +105,7 @@ const shoes = [
         stock: 20,
         color: "Negro",
         oferta: false,
-        infoText: `Lorem ipsum dolor sit amet 
-        consectetur adipisicing elit. 
-        Molestiae maxime voluptatem quam, `,
+        infoText: `Especiales para tardes de deporte. `,
         id:4,
     },
     {
@@ -126,9 +118,7 @@ const shoes = [
         stock: 30,
         color: "Negro",
         oferta: true,
-        infoText: `Lorem ipsum dolor sit amet 
-        consectetur adipisicing elit. 
-        Molestiae maxime voluptatem quam, `,
+        infoText: `Zapatillas estilosas. `,
         id:5,
     },
     {
@@ -141,9 +131,7 @@ const shoes = [
         stock: 30,
         color: "Negro",
         oferta: true,
-        infoText: `Lorem ipsum dolor sit amet 
-        consectetur adipisicing elit. 
-        Molestiae maxime voluptatem quam, `,
+        infoText: `Unas clásicas. `,
         id:6,
     },
     {
@@ -156,9 +144,7 @@ const shoes = [
         stock: 40,
         color: "Gris",
         oferta: false,
-        infoText: `Lorem ipsum dolor sit amet 
-        consectetur adipisicing elit. 
-        Molestiae maxime voluptatem quam, `
+        infoText: `Siempre a la moda. `
         ,
         id:7,
     },
@@ -173,9 +159,7 @@ const shoes = [
         stock: 10,
         color: "Blanco",
         oferta: false,
-        infoText: `Lorem ipsum dolor sit amet 
-        consectetur adipisicing elit. 
-        Molestiae maxime voluptatem quam, `,
+        infoText: `Una de las zapatillas más comodas. `,
         id:8,
         
     },
@@ -189,9 +173,7 @@ const shoes = [
         stock: 10,
         color: "Negro",
         oferta: true,
-        infoText: `Lorem ipsum dolor sit amet 
-        consectetur adipisicing elit. 
-        Molestiae maxime voluptatem quam, `,
+        infoText: `Deportivas y estilosas.`,
         id:9,
     },
     {
@@ -204,9 +186,7 @@ const shoes = [
         stock: 40,
         color: "Verde",
         oferta: false,
-        infoText: `Lorem ipsum dolor sit amet 
-        consectetur adipisicing elit. 
-        Molestiae maxime voluptatem quam, `,
+        infoText: `Especial para comenzar en el Skateboarding. `,
         id:10,
     },
     {
@@ -219,9 +199,7 @@ const shoes = [
         stock: 20,
         color: "Negro",
         oferta: true,
-        infoText: `Lorem ipsum dolor sit amet 
-        consectetur adipisicing elit. 
-        Molestiae maxime voluptatem quam, `,
+        infoText: `Super cómodas. `,
         id:11,
     },
     {
@@ -234,9 +212,7 @@ const shoes = [
         stock: 20,
         color: "Negro",
         oferta: true,
-        infoText: `Lorem ipsum dolor sit amet 
-        consectetur adipisicing elit. 
-        Molestiae maxime voluptatem quam, `,
+        infoText: `Un clásico del Skateboarding. `,
         id:12,
     },
     {
@@ -249,9 +225,7 @@ const shoes = [
         stock: 100,
         color: "Negro",
         oferta: false,
-        infoText: `Lorem ipsum dolor sit amet 
-        consectetur adipisicing elit. 
-        Molestiae maxime voluptatem quam, `,
+        infoText: `Casuales para hacer de todo. `,
         id:13,
     },
     {
@@ -264,9 +238,7 @@ const shoes = [
         stock: 20,
         color: "Blanco",
         oferta: false,
-        infoText: `Lorem ipsum dolor sit amet 
-        consectetur adipisicing elit. 
-        Molestiae maxime voluptatem quam, `,
+        infoText: `Materiales super resistentes. `,
         id:14,
     },
     {
@@ -279,9 +251,7 @@ const shoes = [
         stock: 10,
         color: "Negro",
         oferta: false,
-        infoText: `Lorem ipsum dolor sit amet 
-        consectetur adipisicing elit. 
-        Molestiae maxime voluptatem quam, `,
+        infoText: `Zapatillas aireadas. `,
         id:15,
     },
     {
@@ -294,9 +264,7 @@ const shoes = [
         stock: 20,
         color: "Negro",
         oferta: false,
-        infoText: `Lorem ipsum dolor sit amet 
-        consectetur adipisicing elit. 
-        Molestiae maxime voluptatem quam, `,
+        infoText: `Zapatillas frescas.`,
         id:16,
     },
     {
@@ -309,9 +277,7 @@ const shoes = [
         stock: 30,
         color: "Negro",
         oferta: false,
-        infoText: `Lorem ipsum dolor sit amet 
-        consectetur adipisicing elit. 
-        Molestiae maxime voluptatem quam, `,
+        infoText: `Otras clásicas del deporte.`,
         id:17,
     },
     {
@@ -324,9 +290,7 @@ const shoes = [
         stock: 40,
         color: "Negro",
         oferta: true,
-        infoText: `Lorem ipsum dolor sit amet 
-        consectetur adipisicing elit. 
-        Molestiae maxime voluptatem quam, `,
+        infoText: `Una de las mejores opciones para correr. `,
         id:18,
     },
     {
@@ -339,9 +303,7 @@ const shoes = [
         stock: 10,
         color: "Negro",
         oferta: false,
-        infoText: `Lorem ipsum dolor sit amet 
-        consectetur adipisicing elit. 
-        Molestiae maxime voluptatem quam, `,
+        infoText: `Económicas y resistentes. `,
         id:19,
     },
     {
@@ -354,26 +316,24 @@ const shoes = [
         stock: 20,
         color: "Negro",
         oferta: false,
-        infoText: `Lorem ipsum dolor sit amet 
-        consectetur adipisicing elit. 
-        Molestiae maxime voluptatem quam, `,
+        infoText: `Económicas y casuales.`,
         id:20,
     },
-    {
-        nombre: "Adidas Lite Racer",
-        precio: 15000,
-        src: `/assets/shoesImages/adidasLiteRacerShoes.svg`,
-        category: "Deportivas",
-        marca:"Adidas",
-        talles: [40,41,42,43],
-        stock: 10,
-        color: "Negro",
-        oferta: false,
-        infoText: `Lorem ipsum dolor sit amet 
-        consectetur adipisicing elit. 
-        Molestiae maxime voluptatem quam, `,
-        id:21,
-    },
+    // {
+    //     nombre: "Adidas Lite Racer",
+    //     precio: 15000,
+    //     src: `/assets/shoesImages/adidasLiteRacerShoes.svg`,
+    //     category: "Deportivas",
+    //     marca:"Adidas",
+    //     talles: [40,41,42,43],
+    //     stock: 10,
+    //     color: "Negro",
+    //     oferta: false,
+    //     infoText: `Lorem ipsum dolor sit amet 
+    //     consectetur adipisicing elit. 
+    //     Molestiae maxime voluptatem quam, `,
+    //     id:21,
+    // },
     {
         nombre: "Vans Mn Atwood",
         precio: 25000,
@@ -384,10 +344,8 @@ const shoes = [
         stock: 30,
         color: "Gris",
         oferta: true,
-        infoText: `Lorem ipsum dolor sit amet 
-        consectetur adipisicing elit. 
-        Molestiae maxime voluptatem quam, `,
-        id:22,
+        infoText: `Clásico de clásicos. `,
+        id:21,
     },
     {
         nombre: "Converse clasicas",
@@ -399,10 +357,8 @@ const shoes = [
         stock: 10,
         color: "Negro",
         oferta: false,
-        infoText: `Lorem ipsum dolor sit amet 
-        consectetur adipisicing elit. 
-        Molestiae maxime voluptatem quam, `,
-        id:23,
+        infoText: `Especial para cualquier actividad.`,
+        id:22,
     },
     {
         nombre: "Converse Net Star",
@@ -414,10 +370,8 @@ const shoes = [
         stock: 40,
         color: "Negro",
         oferta: true,
-        infoText: `Lorem ipsum dolor sit amet 
-        consectetur adipisicing elit. 
-        Molestiae maxime voluptatem quam, `,
-        id:24,
+        infoText: `Converse siempre con vos.`,
+        id:23,
     },
     {
         nombre: "Converse Clasicas Azules",
@@ -429,10 +383,8 @@ const shoes = [
         stock: 10,
         color: "Azul",
         oferta: false,
-        infoText: `Lorem ipsum dolor sit amet 
-        consectetur adipisicing elit. 
-        Molestiae maxime voluptatem quam, `,
-        id:25,
+        infoText: `Converse clásicas para lo casual. `,
+        id:24,
     },
     {
         nombre: "Converse Slip",
@@ -444,10 +396,8 @@ const shoes = [
         stock: 10,
         color: "Blanco",
         oferta: false,
-        infoText: `Lorem ipsum dolor sit amet 
-        consectetur adipisicing elit. 
-        Molestiae maxime voluptatem quam, `,
-        id:26,
+        infoText: `Económicas y duraderas. `,
+        id:25,
     },
     {
         nombre: "Converse One Star",
@@ -459,26 +409,10 @@ const shoes = [
         stock: 50,
         color: "Rojo",
         oferta: false,
-        infoText: `Lorem ipsum dolor sit amet 
-        consectetur adipisicing elit. 
-        Molestiae maxime voluptatem quam, `,
-        id:27,
+        infoText: `El mejor precio disponible.`,
+        id:26,
     },
-    {
-        nombre: "Adidas Lite Racer",
-        precio: 15000,
-        src: `/assets/shoesImages/adidasLiteRacerShoes.svg`,
-        category: "Deportivas",
-        marca:"Adidas",
-        talles: [40,41,42,43],
-        stock: 10,
-        color: "Negro",
-        oferta: true,
-        infoText: `Lorem ipsum dolor sit amet 
-        consectetur adipisicing elit. 
-        Molestiae maxime voluptatem quam, `,
-        id:28,
-    },
+    
     {
         nombre: "John Foos clasicas",
         precio: 12000,
@@ -489,10 +423,8 @@ const shoes = [
         stock: 14,
         color: "Rojo",
         oferta: false,
-        infoText: `Lorem ipsum dolor sit amet 
-        consectetur adipisicing elit. 
-        Molestiae maxime voluptatem quam, `,
-        id:29,
+        infoText: `Clásicos de John Foos. `,
+        id:27,
     },
     {
         nombre: "John Foos clasicas",
@@ -504,10 +436,8 @@ const shoes = [
         stock: 30,
         color: "Violeta",
         oferta: false,
-        infoText: `Lorem ipsum dolor sit amet 
-        consectetur adipisicing elit. 
-        Molestiae maxime voluptatem quam, `,
-        id:30,
+        infoText: `John Foos clásicas violetas.`,
+        id:28,
     },
     {
         nombre: "John Foos clasicas",
@@ -519,10 +449,8 @@ const shoes = [
         stock: 30,
         color: "Verde",
         oferta: true,
-        infoText: `Lorem ipsum dolor sit amet 
-        consectetur adipisicing elit. 
-        Molestiae maxime voluptatem quam, `,
-        id:31,
+        infoText: `John Foos clasicas verdes. `,
+        id:29,
     },
     {
         nombre: "Adidas Gazelle",
@@ -534,10 +462,8 @@ const shoes = [
         stock: 20,
         color: "Rojo",
         oferta: false,
-        infoText: `Lorem ipsum dolor sit amet 
-        consectetur adipisicing elit. 
-        Molestiae maxime voluptatem quam, `,
-        id:32,
+        infoText: `Buen diseño y muy cómodas.`,
+        id:30,
     },
     {
         nombre: "Adidas ShowTheWay",
@@ -549,10 +475,8 @@ const shoes = [
         stock: 40,
         color: "Azul",
         oferta: false,
-        infoText: `Lorem ipsum dolor sit amet 
-        consectetur adipisicing elit. 
-        Molestiae maxime voluptatem quam, `,
-        id:33,
+        infoText: `Especiales para comenzar en el deporte.`,
+        id:31,
     },
     {
         nombre: "DC Crisis Cl",
@@ -564,10 +488,8 @@ const shoes = [
         stock: 20,
         color: "Azul",
         oferta: false,
-        infoText: `Lorem ipsum dolor sit amet 
-        consectetur adipisicing elit. 
-        Molestiae maxime voluptatem quam, `,
-        id:34,
+        infoText: `El mejor momento para comenzar con el Skateboarding.`,
+        id:32,
     },
     {
         nombre: "DC Tonik Tx",
@@ -579,10 +501,8 @@ const shoes = [
         stock: 10,
         color: "Marrón",
         oferta: false,
-        infoText: `Lorem ipsum dolor sit amet 
-        consectetur adipisicing elit. 
-        Molestiae maxime voluptatem quam, `,
-        id:35,
+        infoText: `Muy resistentes.`,
+        id:33,
     },
     {
         nombre: "DC Trase Tx",
@@ -594,10 +514,8 @@ const shoes = [
         stock: 20,
         color: "Verde",
         oferta: true,
-        infoText: `Lorem ipsum dolor sit amet 
-        consectetur adipisicing elit. 
-        Molestiae maxime voluptatem quam, `,
-        id:36,
+        infoText: `Uno de los modelos más comodos.`,
+        id:34,
     },
     {
         nombre: "Airwalk Ntx Lyte",
@@ -609,10 +527,8 @@ const shoes = [
         stock: 20,
         color: "Negro",
         oferta: false,
-        infoText: `Lorem ipsum dolor sit amet 
-        consectetur adipisicing elit. 
-        Molestiae maxime voluptatem quam, `,
-        id:37,
+        infoText: `Livianas y elásticas.`,
+        id:35,
     },
     {
         nombre: "airwalk Ntl Stones",
@@ -624,10 +540,8 @@ const shoes = [
         stock: 20,
         color: "Marrón",
         oferta: false,
-        infoText: `Lorem ipsum dolor sit amet 
-        consectetur adipisicing elit. 
-        Molestiae maxime voluptatem quam, `,
-        id:38,
+        infoText: `Un toque de elegancia. `,
+        id:36,
     },
     {
         nombre: "Airwalk Yatch",
@@ -639,139 +553,8 @@ const shoes = [
         stock: 10,
         color: "Negro",
         oferta: false,
-        infoText: `Lorem ipsum dolor sit amet 
-        consectetur adipisicing elit. 
-        Molestiae maxime voluptatem quam, `,
-        id:39,
+        infoText: `Airwalk en la casa. `,
+        id:37,
     },
-    // {
-    //     nombre: "Adidas Lite Racer",
-    //     precio: 15000,
-    //     src: `/assets/shoesImages/adidasLiteRacerShoes.svg`,
-    //     category: "Deportivas",
-    //     marca:"Adidas",
-    //     talles: [40,41,42,43],
-    //     stock: 10,
-    //     color: "Negro",
-    // },
-    // {
-    //     nombre: "Adidas Lite Racer",
-    //     precio: 15000,
-    //     src: `/assets/shoesImages/adidasLiteRacerShoes.svg`,
-    //     category: "Deportivas",
-    //     marca:"Adidas",
-    //     talles: [40,41,42,43],
-    //     stock: 10,
-    //     color: "Negro",
-    // },
-    // {
-    //     nombre: "Adidas Lite Racer",
-    //     precio: 15000,
-    //     src: `/assets/shoesImages/adidasLiteRacerShoes.svg`,
-    //     category: "Deportivas",
-    //     marca:"Adidas",
-    //     talles: [40,41,42,43],
-    //     stock: 10,
-    //     color: "Negro",
-    // },
-    // {
-    //     nombre: "Adidas Lite Racer",
-    //     precio: 15000,
-    //     src: `/assets/shoesImages/adidasLiteRacerShoes.svg`,
-    //     category: "Deportivas",
-    //     marca:"Adidas",
-    //     talles: [40,41,42,43],
-    //     stock: 10,
-    //     color: "Negro",
-    // },
-    // {
-    //     nombre: "Adidas Lite Racer",
-    //     precio: 15000,
-    //     src: `/assets/shoesImages/adidasLiteRacerShoes.svg`,
-    //     category: "Deportivas",
-    //     marca:"Adidas",
-    //     talles: [40,41,42,43],
-    //     stock: 10,
-    //     color: "Negro",
-    // },
-    // {
-    //     nombre: "Adidas Lite Racer",
-    //     precio: 15000,
-    //     src: `/assets/shoesImages/adidasLiteRacerShoes.svg`,
-    //     category: "Deportivas",
-    //     marca:"Adidas",
-    //     talles: [40,41,42,43],
-    //     stock: 10,
-    //     color: "Negro",
-    // },
-    // {
-    //     nombre: "Adidas Lite Racer",
-    //     precio: 15000,
-    //     src: `/assets/shoesImages/adidasLiteRacerShoes.svg`,
-    //     category: "Deportivas",
-    //     marca:"Adidas",
-    //     talles: [40,41,42,43],
-    //     stock: 10,
-    //     color: "Negro",
-    // },
-    // {
-    //     nombre: "Adidas Lite Racer",
-    //     precio: 15000,
-    //     src: `/assets/shoesImages/adidasLiteRacerShoes.svg`,
-    //     category: "Deportivas",
-    //     marca:"Adidas",
-    //     talles: [40,41,42,43],
-    //     stock: 10,
-    //     color: "Negro",
-    // },
-    // {
-    //     nombre: "Adidas Lite Racer",
-    //     precio: 15000,
-    //     src: `/assets/shoesImages/adidasLiteRacerShoes.svg`,
-    //     category: "Deportivas",
-    //     marca:"Adidas",
-    //     talles: [40,41,42,43],
-    //     stock: 10,
-    //     color: "Negro",
-    // },
-    // {
-    //     nombre: "Adidas Lite Racer",
-    //     precio: 15000,
-    //     src: `/assets/shoesImages/adidasLiteRacerShoes.svg`,
-    //     category: "Deportivas",
-    //     marca:"Adidas",
-    //     talles: [40,41,42,43],
-    //     stock: 10,
-    //     color: "Negro",
-    // },
-    // {
-    //     nombre: "Adidas Lite Racer",
-    //     precio: 15000,
-    //     src: `/assets/shoesImages/adidasLiteRacerShoes.svg`,
-    //     category: "Deportivas",
-    //     marca:"Adidas",
-    //     talles: [40,41,42,43],
-    //     stock: 10,
-    //     color: "Negro",
-    // },
-    // {
-    //     nombre: "Adidas Lite Racer",
-    //     precio: 15000,
-    //     src: `/assets/shoesImages/adidasLiteRacerShoes.svg`,
-    //     category: "Deportivas",
-    //     marca:"Adidas",
-    //     talles: [40,41,42,43],
-    //     stock: 10,
-    //     color: "Negro",
-    // },
-    // {
-    //     nombre: "Adidas Lite Racer",
-    //     precio: 15000,
-    //     src: `/assets/shoesImages/adidasLiteRacerShoes.svg`,
-    //     category: "Deportivas",
-    //     marca:"Adidas",
-    //     talles: [40,41,42,43],
-    //     stock: 10,
-    //     color: "Negro",
-    // },
+    
 ]

@@ -39,8 +39,10 @@ body{
                     "inputUser" 10%
                     "labelPass" 10%
                     "inputPass" 10%
-                    "redirectRegister" 20%
-                    "button" 20%
+                    "repeatPassLabel"10%
+                    "repeatPassInput"10%
+                    "redirectRegister" 10%
+                    "button" 7%
     ;
 }
 .title-text{
@@ -60,7 +62,7 @@ body{
 .loginText{
     color: white;
     font-weight: 900;
-   
+    
 }
 .foulText{
     color: #ef2b41;
@@ -69,7 +71,7 @@ body{
 }
 @media(max-width:900px){
     .title-text{
-        font-size:clamp(18px, 8vw, 58px);
+        font-size:clamp(18px, 5vw, 50px);
     }
 }
 .userLabel{
@@ -111,6 +113,12 @@ body{
     height: 50%;
     padding: 5px;
     border-radius: 22px;
+}
+.labelPassRepeat{
+    grid-area: repeatPassLabel;
+}
+.inputPassRepeat{
+    grid-area: repeatPassInput;
 }
 .registerRedirectMsg{
     grid-area: redirectRegister;

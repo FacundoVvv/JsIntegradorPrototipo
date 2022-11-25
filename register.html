@@ -4,9 +4,27 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>REGISTER</title>
+    <link rel="stylesheet" href="/css/register.css">
+    <title>LOGIN</title>
 </head>
 <body>
-    
+    <div class="grid-container">
+        <div class="title-text">
+            <h2 class="loginText">REGÍSTRATE<h2 class="foulText">FOUL</h2></h2>
+        </div>
+        <label class="userLabel" for="user">Nombre de usuario</label>
+        <input class="userInput" name="user"  id="user" type="text" placeholder="User...">
+        
+        <label class="labelPass" for="password" id="password">Contraseña</label>
+        <input class="inputPass" type="password" id="password" placeholder="Pass..." name="password">
+        
+        <label class="labelPass labelPassRepeat" for="passwordRepeat" id=""passwordRepeat">Repite la contraseña</label>
+        <input class="inputPass inputPassRepeat" type="passwordRepeat" id="passwordRepeat" placeholder="Pass..." name="password">
+         <div class="registerRedirectMsg">
+               
+            <span>¿Ya tenés una cuenta?<a class="register-text" href="login.html">Iniciá sesión</a></span>
+         </div>
+        <button class="button">Iniciar sesión</button>
+    </div>
 </body>
 </html>

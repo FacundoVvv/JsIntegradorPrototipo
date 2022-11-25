@@ -15,7 +15,7 @@ let arrayFiveOfFive = [];
 let indice = 0;
 let indexRecommended = 0;
 //shoes search products
-const shoesContainer = document.querySelector('#shoesContainer');
+const shoesContainer = document.getElementById('shoesContainer');
 const allShoesSeparateInArraysOfTen = [];
 const indexNavigatorPaginator = 0;
 
@@ -59,6 +59,75 @@ const iconBurguer = document.querySelector('.iconBurguer');
 const navList = document.querySelector('.nav-list');
 let activated = false;
 
+//mensaje de error variables
+const containerErrorMsg = document.querySelector('.error-msg-container');
+
+//local storage
+const addedCartItemsLS = JSON.parse(localStorage.getItem('Added cart items'));
+let addedSameItems = [];
+const detectLs = ()=>{
+    //ADDED CART ITEMS 
+    
+    let actualIDS = [];
+    let allShoes = shoesContainer.querySelectorAll('div');
+    let actualShoes =[];
+
+    if(addedCartItemsLS){
+        addedCartItemsLS.map(e=> actualIDS.push(e.id));
+
+        //busca entre todas las zapatillas renderizadas y selecciona el boton a modificar
+        allShoes.forEach(e=> { 
+          if(actualIDS.includes(parseInt(e.querySelector('#id-text').textContent))){
+            let item = e.querySelector('#addToCartButton');
+            updateAddButton(item);
+            renderCartProducts(item);
+          } 
+        })
+
+       
+    }
+
+    
+    //si detecta que hay contenido en addedCartItemsLS...
+    //agrega el boton "agregado".
+
+}
+
+//mensaje de errores style/func
+const displayError = (parameter)=>{
+    if(parameter == 'emptyCar'){
+        
+        const emptyCarMsg = document.querySelector('#empty-car')
+            containerErrorMsg.style.display="flex";
+            emptyCarMsg.style.display="flex";
+            setTimeout(()=>{
+                containerErrorMsg.style.display="none";
+                emptyCarMsg.style.display="none";
+            }, 800)
+    }
+    else if(parameter == 'methodCar'){
+        
+            const methodCarMsg = document.querySelector('#method-car')
+                containerErrorMsg.style.display="flex";
+                methodCarMsg.style.display="flex";
+                setTimeout(()=>{
+                    containerErrorMsg.style.display="none";
+                    methodCarMsg.style.display="none";
+                }, 800)
+    }
+    else if(parameter == 'succesfulBought'){
+        
+        const succesfulBought = document.querySelector('#succesfulBought')
+            containerErrorMsg.style.display="flex";
+            succesfulBought.style.display="flex";
+            setTimeout(()=>{
+                containerErrorMsg.style.display="none";
+                succesfulBought.style.display="none";
+            }, 800)
+}
+
+}
+
 const  closeMenuBurguer = (target)=>{
     if(!navList.contains(target) && target !== iconBurguer){
         if(screen.width <= 900){
@@ -80,7 +149,7 @@ burguerMenuDisplayFunc = (action)=>{
         }
 }
 
-const addedIems = []; //variable global para saber que items están agregados al carrito
+const addedItems = []; //variable global para saber que items están agregados al carrito
 
 const addButtonClass = (id) =>{
     let all = shoesContainer.querySelectorAll('div');
@@ -142,32 +211,24 @@ const resetRender = ()=>{
 
 const verifyBought = ()=>{
 
-    console.log(itemsCartContainer.children.length)
+   
     if(itemsCartContainer.children.length == 0){
-        alert('carrito vacío');
+        
+        displayError('emptyCar');
 
     }
     else if(!cardMethodSelected){
-        alert('elegí un metodo de pago')
+        displayError('methodCar');
     }
     else{
-        alert('Compra realizada');
+        displayError('succesfulBought');
         resetCart();
         resetRender();
         cardMethodSelected = false;
+        addedItemsID = [];
+        localStorage.removeItem('Added cart items')
     }
-    // if(!itemsCartContainer.childNodes.length){
-    //    console.log(itemsCartContainer.childNodes.length);
-    //    console.log('carro vacio')
-    // }
-    // else if(!cardMethodSelected){
-    //     alert("elige un metodo de pago.")
-    // }
-    // else{
-    //     alert("compra realizada.")
-    //     resetCart();
-    //     resetRender();
-    // }
+
     
 }
 const resetDropEffect = (target)=>{
@@ -204,7 +265,7 @@ payMethodSelect = (target)=>{
 
 //actualiza el precio cuando tocas las flechitas
 const sumOrRestCartPrice = (target, operation)=>{
-    // console.log(target)
+    
     if(operation == '+'){
         initialValue += target[0].precio;
         totalPriceCart.textContent = `$ ${initialValue}`;
@@ -242,11 +303,12 @@ const detectedSameItem = (id)=>{
     const newNumberCart = numberCartToNumber + 1;
     
     numberCart.textContent = newNumberCart;
-
+    addedSameItems.push(item)
+    
 }
 }
 const renderCartProducts = (item)=>{
-
+   
     if(item.id === 'addToCartButton'){
         let actualItem = shoes.filter(e=> e.id == item.parentElement.querySelector('#id-text').textContent);
         const {src, id, nombre, precio} = actualItem[0];
@@ -266,13 +328,15 @@ const renderCartProducts = (item)=>{
         //se guarda el objeto en un array y se llama al update price
         updatePrice(item);
         addedItemsID.push(actualItem[0].id);
-        addedIems.push(actualItem[0]);
+        addedItems.push(actualItem[0]);
         //se actualiza el estado del boton AGREGAR
-        updateAddButton(item, id);
-        alert("objeto añadido.")
-    //    updatePriceWhenAddedItems(item)
+        updateAddButton(item);
+       
+        //se agrega el item al local storage
+        localStorage.setItem('Added cart items', JSON.stringify(addedItems));
+            
         }else{
-            alert("Se ha sumado un producto igual.")
+            alert("Se ha sumado un producto igual.");
             //actualiza el precio total
             sumOrRestCartPrice(actualItem, '+');
             //cambia datos de cada item particular
@@ -290,6 +354,7 @@ const sumProductsCart = (target)=>{
     
     let actualItem = shoes.filter(e=> e.id == target.parentElement.parentElement.querySelector('.id-cart-text').textContent);
     let numberCart = target.parentElement.parentElement.querySelector('#numberCart')
+    
     if(target.id === 'leftLessArrow'){
         if(numberCart.textContent == 1){
             addedItemsID.pop(addedItemsID.filter(e=> e.id == actualItem[0].id));
@@ -303,8 +368,13 @@ const sumProductsCart = (target)=>{
     }
     if(target.id === 'rightMoreArrow')
     {   
-        numberCart.textContent = Number(numberCart.textContent)+1;
-        sumOrRestCartPrice(actualItem, '+')
+        if(parseInt(actualItem[0].stock) > parseInt(numberCart.textContent)){
+            numberCart.textContent = Number(numberCart.textContent)+1;
+            sumOrRestCartPrice(actualItem, '+')
+        }else{
+            alert("stock insuficiente.")
+        }
+        
         
     }
     
@@ -379,7 +449,7 @@ const filterProducts = ()=>{
             }
             
         })
-        console.log(actualFilteredShoes)
+        // console.log(actualFilteredShoes)
     //si hay elementos filtrados en el array de filtered, los renderiza
     if(actualFilteredShoes.length > 0){
         shoesContainer.innerHTML = '';
@@ -443,6 +513,7 @@ const desestructureShoes = (obj)=>{
     <h3 class="shoesTitle" id="shoesTitle">${nombre.toUpperCase()}</h3>
     <span class="informacion-text">${infoText}</span>
     <span id="priceShoesText" class="precio">$${precio.toLocaleString('es-AR')}</span>
+    <span class="stock">Stock: ${stock} </span> 
     <span class="id-text" id="id-text" value="${id}">${id}</span>
     </div>`
     addToCartButton = document.querySelector('#addToCartButton');
@@ -609,6 +680,11 @@ const init = ()=>{
         }
         
     })
+    
+    document.addEventListener('DOMContentLoaded', (e) =>{
+        detectLs();
+        
+    }) 
 
 }   
 
